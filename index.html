@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8001535932913745"
      crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -21,12 +22,13 @@
     </header>
 
     
-    <section id="tierlist">
+
+    <section  id="tierlist">
         <h2>Välkommen till WallPaperJournals Mat och dryck</h2>
-        <p>Läs de senaste Produktna om mat och dryck.</p>
+        <p> Läs de senaste Produktna om mat och dryck <a href="tierlist.html">här</a></p>
     </section>
 
-    <section id="produkt">
+    <section  id="produkt">
         <h2>Senaste Produkt</h2>
         <div class="review">
             <h3>Vin: Château Margaux 2015</h3>
@@ -42,14 +44,24 @@
     </section>
 
     <section id="nytt">
-        <h2>Nytta Oss</h2>
-        <p>Har du frågor eller vill skicka in en recension? Nytta oss på <a href="mailto:info@matdryckmagazine.se">piceuniquekundtjanst@gmail.com</a>.</p>
+        <h2>Sugen på mer?</h2>
+        <p>håll utkik så kommer vi med nya recensioner varje vecka!</p>
     </section>
 
+    <div class="container">
+        <h1>Dela dina tankar!</h1>
+        <form id="reviewForm">
+            <input type="text" id="productName" placeholder="Produktnamn" required>
+            <input type="text" id="reviewerName" placeholder="Ditt namn" required>
+            <textarea id="reviewText" placeholder="Din recension" required></textarea>
+            <button type="submit">RECENSERA!"</button>
+        </form>
+        <h2>Recensioner</h2>
+        <div id="reviews"></div>
+    </div>
     <footer>
         <p>&copy; 2024 WallPaperJournals magazine.</p>
     </footer>
-    
     <script src="skript.js"></script>
 </body>
 </html>
