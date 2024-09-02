@@ -14,21 +14,24 @@ body {
 
 header {
    background-color: #FFDC7F;
-   color: #000;
+   color: #16325B;
    padding: 20px 0;
    text-align: center;
+   padding-bottom: auto;
+   text-shadow: #16325B;
 }
 
 header h1 {
    background-color: #FFDC7F;
    font-family: "porter-sans-inline";
    margin: 0;
+   text-align: center;
 }
 
 nav{
    background-color: #78B7D0;
-   padding: 3px;
-   
+   padding: 9px;
+   text-align: center;
 }
 nav ul {
    font-family: "racingsans";
@@ -38,12 +41,13 @@ nav ul {
 
 nav ul li {
    display: inline;
-   margin: 0 10px;
+   margin: 0 10em;
 }
 
 nav ul li a {
    color: #000;
    text-decoration: none;
+   font-size: 25px;
 }
 
 section {

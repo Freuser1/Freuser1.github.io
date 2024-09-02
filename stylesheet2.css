@@ -12,7 +12,8 @@ body {
  }
  header {
     background-color: #FFDC7F;
-    color: #000;
+    color: #16325B;
+    text-shadow: #16325B;
     padding: 20px 0;
     text-align: center;
  }
@@ -21,6 +22,7 @@ body {
     background-color: #FFDC7F;
     font-family: "porter-sans-inline";
     margin: 0;
+    font-size: auto;
  }
  
  nav{
@@ -36,12 +38,13 @@ body {
  
  nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 10em;
  }
  
  nav ul li a {
     color: #000;
     text-decoration: none;
+    font-size: 25px;
  }
  section {
     padding: 20px;
