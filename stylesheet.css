@@ -177,16 +177,16 @@ table-layout: auto;
    float: left;
 }
 
-table{
-   float: right;
-   margin-top: 130px;
-}
 .text-box {
    max-width: 100%;
    text-align: left;
    padding: 20px;
    background-color: #fff;
    border-radius: 10px;
+   place-self: auto;
+}
+.text-box p {
+   float: right;
 }
 
 @media (max-width: 400px) {
