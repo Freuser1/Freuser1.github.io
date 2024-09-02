@@ -47,8 +47,9 @@ nav ul li {
 nav ul li a {
    color: #000;
    text-decoration: none;
-   font-size: 25px;
+   
 }
+
 
 section {
    padding: 20px;
@@ -220,7 +221,8 @@ table-layout: auto;
  
  .box {
    float: auto;
-   text-align: left;
+   text-align: left; 
+   font-size: large;
  }
  h4{
    font-size: x-large;
