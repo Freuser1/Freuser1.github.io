@@ -220,5 +220,8 @@ table-layout: auto;
  
  .box {
    float: auto;
-   text-align: center;
+   text-align: left;
+ }
+ h4{
+   font-size: x-large;
  }
