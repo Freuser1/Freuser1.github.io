@@ -10,7 +10,6 @@
 body {
    font-family: "racingsans";
    color: #227B94;
-   
 }
 
 header {
@@ -136,41 +135,86 @@ button:hover {
    color: #555;
 }
 
+div .bildruta{
+   float: center;
+}
 .bildruta{
    display: flex;
    flex-direction: column;
    align-items: center;
-   max-width: 800px;
-   background-color: white;
+   max-width: 600px;
+   background-color: #fff;
    padding: 20px;
    border-radius: 10px;
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-@media (min-width: 600px) {
+.kolumn{
+   padding: auto;
+}
+.toppFyra{
+   content: "";
+   clear: both;
+table-layout: auto;
+}
+@media (max-width: 400px) {
    .container {
        flex-direction: row;
    }
 }
 
-img {
+.egen {
    max-width: 100%;
    height: auto;
    border-radius: 10px;
    margin-bottom: 20px;
 }
 
+.småkort{
+   max-width: 50%;
+   height: auto;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   float: left;
+}
+
+table{
+   float: right;
+   margin-top: 130px;
+}
 .text-box {
    max-width: 100%;
    text-align: left;
    padding: 20px;
-   background-color: #e0e0e0;
+   background-color: #fff;
    border-radius: 10px;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 400px) {
    .text-box {
        margin-left: 20px;
        max-width: 50%;
    }
 }
+
+
+.wrapper {
+   width: 1000px;
+   margin: 0 auto;
+ }
+ 
+ .content {
+   height: 500px;
+   width: 1000px;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .image {
+   float: left;
+ }
+ 
+ .box {
+   float: auto;
+   text-align: center;
+ }
