@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "porter-sans-inline";
+    src: url(porter-sans-inline-block.ttf);
+ }
+ @font-face {
+    font-family: "Racingsans";
+    src: url(RacingSansOne-Regular.ttf);
+ }
+ 
+ body {
+    font-family: "Calibri", sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+ }
+ 
+ header {
+    background-color: #FFDC7F;
+    color: #16325B;
+    text-shadow: 1px 1px #16325B;
+    padding: 20px 0;
+    text-align: center;
+ }
+ 
+ header h1 {
+    font-family: "porter-sans-inline", sans-serif;
+    margin: 0;
+    font-size: 2.5em;
+ }
+ 
+ h2 {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+    margin: 20px 0;
+ }
+ 
+ nav {
+    background-color: #78B7D0;
+    padding: 10px;
+    text-align: center;
+ }
+ 
+ nav ul {
+    font-family: "Racingsans", sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+ }
+ 
+ nav ul li {
+    margin: 0;
+ }
+ 
+ nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+ }
+ 
+ section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .review {
+    margin-bottom: 20px;
+ }
+ 
+ footer {
+    font-family: "Racingsans", sans-serif;
+    background-color: #FFDC7F;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+ }
+ 
+ .kort {
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    width: 90%;
+    max-width: 500px;
+    text-align: center; 
+    display: grid;
+    place-items: center; /* Centrerar både horisontellt och vertikalt */
+    height: 100vh;   
+ }
+ 
+ .text-box {
+    max-width: 100%;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+ }
+ 
+ h4 {
+    font-size: 1.5em;
+    text-align: center;
+ }
+
+
+.egen {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+ 
+ 
+ .intro {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 1.5;
+    max-width: 90%;
+ }
+ 
+ .box {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #16325B;
+   
+    margin-bottom: 20px;
+ }
+ 
+ .button {
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+ 
+ .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #FFDC7F;
+ }
+ 
+ .button1:hover {
+    background-color: #FFDC7F;
+    color: white;
+ }
+ 
+ .button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #16325B;
+ }
+ 
+ .button2:hover {
+    background-color: #16325B;
+    color: white;
+ }
+ 
+ a {
+    color: inherit;
+    text-decoration: none;
+ }
+ 
+ /* Responsiv design för mobila enheter */
+ @media (max-width: 768px) {
+    header h1 {
+       font-size: 2em;
+    }
+ 
+    nav ul {
+       flex-direction: column;
+       gap: 1em;
+    }
+ 
+    h2 {
+       font-size: 1.8em;
+       text-align: center;
+       margin-left: 0;
+    }
+ 
+    .kort {
+       margin: 20px auto;
+       max-width: 90%;
+    }
+ 
+    .egen {
+       max-width: 100%;
+    }
+ 
+    .box {
+       padding: 15px;
+    }
+ 
+    .button {
+       padding: 12px 24px;
+       font-size: 14px;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    header h1 {
+       font-size: 1.5em;
+    }
+ 
+    nav ul {
+       flex-direction: column;
+       gap: 0.5em;
+    }
+ 
+    h2 {
+       font-size: 1.5em;
+       margin-left: 0;
+    }
+ 
+    .intro {
+       font-size: 1em;
+    }
+ 
+    .button {
+       padding: 10px 20px;
+       font-size: 14px;
+    }
+ }
+ 
