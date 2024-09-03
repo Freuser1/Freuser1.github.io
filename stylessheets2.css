@@ -9,12 +9,12 @@
  
  body {
     font-family: "Racingsans", sans-serif;
-    color: #000;
+    color: black;
     margin: 0;
     padding: 0;
     line-height: 1.6;
  }
- .likidink a{
+  p a{
     color: #000;
     text-decoration: none;
  }
@@ -213,7 +213,15 @@
  .text-box p {
     margin: 0;
  }
- 
+
+ .loco{
+    background-color: #16325B;
+ }
+
+ .kolo{
+    background-color: #78B7D0;
+ }
+
  @media (max-width: 768px) {
     .toppFyra {
         flex-direction: column;
