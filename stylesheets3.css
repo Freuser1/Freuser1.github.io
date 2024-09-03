@@ -184,6 +184,7 @@
     text-decoration: none;
  }
  
+ 
  /* Responsiv design för mobila enheter */
  @media (max-width: 768px) {
     header h1 {
