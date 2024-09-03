@@ -18,8 +18,7 @@
  header {
     background-color: #FFDC7F;
     color: #16325B;
-    text-shadow: 1px 1px #16325B;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
  }
  
@@ -91,12 +90,12 @@
     margin: 20px auto;
     border-radius: 4px;
     border: 1px solid #fff;
-    width: 90%;
+    width:100%;
     max-width: 500px;
     text-align: center; 
     display: grid;
     place-items: center; /* Centrerar både horisontellt och vertikalt */
-    height: 100vh;   
+    height: 100%;   
  }
  
  .text-box {
@@ -112,13 +111,17 @@
  h4 {
     font-size: 1.5em;
     text-align: center;
+   font-family: "Racingsans";
  }
 
 
 .egen {
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
+   display: block;
+   margin: auto;
+   max-width: 100%;
+   height: auto;
+   object-fit: contain;  /* Bibehåller bildens proportioner */
+   border-radius: 10px;
 }
  
  
@@ -136,7 +139,7 @@
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid #16325B;
-   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
  }
  

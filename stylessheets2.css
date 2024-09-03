@@ -9,10 +9,14 @@
  
  body {
     font-family: "Racingsans", sans-serif;
-    color: #227B94;
+    color: #000;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+ }
+ .likidink a{
+    color: #000;
+    text-decoration: none;
  }
  
  header {
@@ -138,7 +142,9 @@
     font-size: 14px;
     color: #555;
  }
- 
+ .bakgrund{
+    background-color: #16325B;
+ }
  .wrapper {
     width: 90%;
     max-width: 1000px;
@@ -178,6 +184,7 @@
     justify-content: center;
     gap: 20px;
     margin: 20px auto;
+    background-color: #e6c55f;
  }
  
  .bildruta {
