@@ -1,0 +1,36 @@
+import cv2
+import matplotlib.pyplot as plt
+import os
+import numpy as np
+
+image_path = '/content/drive/My Drive/din_mapp/planritningar/Floor Plan Sample-Layout1.jpg'  # Ändra sökvägen
+
+try:
+    img = cv2.imread(image_path)
+    if img is None:
+        raise FileNotFoundError(f"Kunde inte läsa bilden: {image_path}")
+
+    # Kontrollera bildens färgrymd
+    if img.shape[-1] == 3:  # Antar att 3 kanaler betyder BGR eller RGB
+        # Konvertera till RGB om det är BGR
+        if cv2.COLOR_BGR2RGB:
+            img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        else:
+            img_rgb = img #Bilden är redan i RGB
+    else:
+        raise ValueError(f"Bilden har fel antal kanaler: {img.shape}")
+
+    plt.imshow(img_rgb)
+    plt.show()
+
+    # Skapa mappen "models" om den inte redan finns
+    models_path = '/content/drive/My Drive/din_mapp/models'
+    if not os.path.exists(models_path):
+        os.makedirs(models_path)
+
+except FileNotFoundError as e:
+    print(f"Fel: {e}")
+except ValueError as e:
+    print(f"Fel: {e}")
+except Exception as e:
+    print(f"Ett oväntat fel inträffade: {e}")
