@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    background: linear-gradient(to bottom, #ffffff, #eaeaea);
+    background: linear-gradient(to bottom, #f8f8f8, #dcdcdc);
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 header {
@@ -18,9 +19,10 @@ header {
     color: white;
     text-align: center;
     padding: 40px 20px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 nav {
@@ -42,10 +44,11 @@ nav a {
     font-size: 1.2rem;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #aaa;
 }
 
 main {
@@ -67,26 +70,29 @@ main {
 .project {
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project:hover {
     transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .project img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .project h2 {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .contact-form {
@@ -96,16 +102,17 @@ main {
     padding: 20px;
     border-radius: 10px;
     background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    background-color: #f9f9f9;
 }
 
 .contact-form button {
@@ -121,7 +128,7 @@ main {
 }
 
 .contact-form button:hover {
-    background-color: #333;
+    background-color: #444;
 }
 
 footer {
@@ -131,4 +138,5 @@ footer {
     padding: 20px;
     width: 100%;
     margin-top: 50px;
+    font-size: 1rem;
 }
