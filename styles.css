@@ -1,142 +1,118 @@
-/* styles.css */
-
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background: linear-gradient(to bottom, #f8f8f8, #dcdcdc);
-    color: #333;
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    color: #000;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
+}
+
+.home-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.home-icon a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.home-icon a:hover {
+    transform: scale(1.1);
 }
 
 header {
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     text-align: center;
-    padding: 40px 20px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    letter-spacing: 3px;
+    padding: 60px 20px;
+    border-bottom: 1px solid #fff;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 40px;
+    gap: 50px;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
+    font-size: 1.1rem;
+    font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #aaa;
+    color: #ccc;
 }
 
 main {
-    max-width: 1200px;
     width: 100%;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0;
+    flex-grow: 1;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    width: 100%;
+    grid-template-columns: 1fr 1fr; /* Två kolumner, halva bredden vardera */
+    gap: 0;
+    width: 100vw; /* Full skärmbredd */
+    padding: 20px 0; /* Lite luft runt korten */
 }
 
-.project {
-    border-radius: 10px;
+.project-card {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Gör korten rektangulära (4:3-förhållande) */
     overflow: hidden;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.project:hover {
+.project-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.project img {
+.project-link {
+    display: block;
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    height: 100%;
 }
 
-.project h2 {
-    text-align: center;
-    padding: 15px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.contact-form {
-    max-width: 500px;
+.project-card img {
     width: 100%;
-    margin-top: 50px;
-    padding: 20px;
-    border-radius: 10px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #f9f9f9;
-}
-
-.contact-form button {
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
-
-.contact-form button:hover {
-    background-color: #444;
+    height: 100%;
+    object-fit: cover; /* Bilden fyller kortet utan att förvrängas */
+    display: block;
 }
 
 footer {
     text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
     width: 100%;
-    margin-top: 50px;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
