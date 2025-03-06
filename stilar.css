@@ -44,11 +44,12 @@ nav ul li a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    width: 60%;
+    max-width: 400px;
 }
 
 #project-info img {

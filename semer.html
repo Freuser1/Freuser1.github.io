@@ -9,17 +9,16 @@
 </head>
 <body>
     <header>
-       
+        <div class="home-icon">
+            <a href="index.html">      
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+        </div>
         <h1>Faraz Faramarzi</h1>
         <nav>
-            <div class="home-icon">
-                <a href="index.html">      
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
-                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                    </svg>
-                </a>
-            </div>
             <ul>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Inquiry</a></li>
@@ -31,12 +30,11 @@
     <main>
         <div id="globe-container"></div>
         <div id="project-info" class="hidden">
-            <!-- <h2 id="project-title"></h2>
+            <h2 id="project-title"></h2>
             <img id="project-image" src="" alt="Project Image">
             <p id="project-description"></p>
-            <button onclick="closeProject()">Back to Globe</button> -->
+            <button onclick="closeProject()">Back to Globe</button> 
         </div>
-        
     </main>
 
     <script>
@@ -50,31 +48,22 @@
             const textureLoader = new THREE.TextureLoader();
             const globeTexture = textureLoader.load("./textures/earth.png");
             const globeGeometry = new THREE.SphereGeometry(1, 64, 64);
-            const globeMaterial = new THREE.MeshStandardMaterial({ 
-                map: globeTexture,
-                color: 0xffffff // Set the color to blue (you can change this to any color you like)
-            });
+            const globeMaterial = new THREE.MeshStandardMaterial({ map: globeTexture });
             const globe = new THREE.Mesh(globeGeometry, globeMaterial);
             scene.add(globe);
     
-            const light = new THREE.PointLight(0x00ff00, 1, 100);
+            const light = new THREE.PointLight(0xffffff, 1, 100);
             light.position.set(5, 5, 5);
             scene.add(light);
     
             camera.position.z = 3;
     
             const projects = [
-                { position: { x: 0.5, y: 0.5, z: 1 }, title: "Project 1", image: "project1.jpg", description: "Description of project 1." },
-                { position: { x: -0.5, y: -0.5, z: 1 }, title: "Project 2", image: "project2.jpg", description: "Description of project 2." },
-                { position: { x: 0.7, y: -0.3, z: 1 }, title: "Project 3", image: "project3.jpg", description: "Description of project 3." },
+                { position: { x: 0.5, y: 0.5, z: 1 }, title: "Project 1", image: "bilder/längaradhus.jpg", description: "Modern arkitektur i harmoni med klassiska inslag." },
+                { position: { x: -0.5 , y: -0.5, z: 1 }, title: "Project 2", image: "bilder/tågstation.png", description: "Tidlös design som kombinerar symmetri och elegans." },
+                { position: { x: 0.5, y: 0.3, z: 1 }, title: "Project 3", image: "project3.jpg", description: "Description of project 3." },
                 { position: { x: -0.2, y: 0.6, z: 1 }, title: "Project 4", image: "project4.jpg", description: "Description of project 4." }
             ];
-            const ambientLight = new THREE.AmbientLight(0x404040, 2); // Mjuk bakgrundsbelysning
-            scene.add(ambientLight);
-    
-            const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-            directionalLight.position.set(2, 2, 2);
-            scene.add(directionalLight);
     
             projects.forEach(proj => {
                 const markerGeometry = new THREE.SphereGeometry(0.02, 8, 8);
@@ -129,3 +118,5 @@
     </script>
 </body>
 </html>
+
+
